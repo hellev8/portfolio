@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1; /* Permette al contenuto di occupare lo spazio rimanente */
+}
+
+
+
+footer {
+    margin-top: auto; /* Forza il footer in basso */
+}

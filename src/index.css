@@ -1,0 +1,63 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Usa Google Fonts */
+  background-color: #f8f9fa; /* Sfondo chiaro */
+  color: #212529;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #17a2b8;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #138496;
+}

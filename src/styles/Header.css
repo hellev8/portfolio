@@ -1,0 +1,39 @@
+.header {
+    background-color: #f0f0f0; /* Lighter gray color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cccccc; /* Lighter border */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth collapsing */
+}
+
+.header.collapsed {
+    transform: translateY(-100%); /* Move header out of view */
+}
+
+.logo img {
+    height: 40px; /* Smaller logo height */
+}
+
+.nav {
+    display: flex;
+    gap: 15px; /* Reduced spacing between links */
+}
+
+.nav a {
+    color: #444; /* Slightly lighter text color for links */
+    text-decoration: none;
+    font-family: 'Georgia', serif; /* Editorial style font */
+    font-size: 16px; /* Smaller font size */
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.nav a:hover {
+    color: #666; /* Text color on hover */
+}
+
+.nav a.active {
+    color: #666; /* Text color for active link */
+    font-weight: bold; /* Bold for active link */
+}

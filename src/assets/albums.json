@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Nature",
+    "cover": "/assets/images/photo1.jpg",
+    "photos": [
+      {
+        "src": "/assets/images/photo1.jpg",
+        "title": "Mountain",
+        "description": "A majestic mountain in the morning light."
+      },
+      {
+        "src": "/assets/images/photo2.jpg",
+        "title": "Forest",
+        "description": "A peaceful forest trail."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Cityscapes",
+    "cover": "/assets/images/photo3.jpg",
+    "photos": [
+      {
+        "src": "/assets/images/photo3.jpg",
+        "title": "Skyline",
+        "description": "A vibrant city skyline at night."
+      }
+    ]
+  }
+]

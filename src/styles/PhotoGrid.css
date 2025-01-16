@@ -1,0 +1,44 @@
+.photo-grid {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0; /* Background color similar to PhotoView */
+    position: relative; /* To position the close button */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+.close-album-btn {
+    position: absolute;
+    top: 10px; /* Positioning the close button at the top right */
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.close-album-btn:hover {
+    background: #ffffff;
+}
