@@ -1,0 +1,147 @@
+.photo-view {
+    width: calc(100vw - 40px); /* Riduci la larghezza per tenere conto della cornice */
+    height: calc(100vh - 40px); /* Riduci l'altezza per tenere conto della cornice */
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+    position: fixed;
+    top: 10px; /* Sposta verso il basso per tenere conto della cornice */
+    left: 10px; /* Sposta verso destra per tenere conto della cornice */
+    z-index: 1000; /* Assicurati che sia sopra altri elementi */
+    border: 10px solid white; /* Aggiungi una cornice bianca di 10 pixel */
+}
+
+
+.photo-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.photo-description {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.2rem;
+    max-width: 200px;
+}
+
+.photo-display {
+
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background: #e0e0e0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex; /* Imposta il display su flex */
+    flex-direction: column; /* Assicura che gli elementi siano disposti in colonna */
+    justify-content: center; /* Centra verticalmente il contenuto */
+    align-items: start; /* Centra orizzontalmente il contenuto */
+}
+
+.photo-container {
+    flex-grow: 1;
+    margin: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Ensure the button is circular */
+}
+
+.close-btn:hover {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shoting-info {
+    justify-content: flex-end; /* Centra verticalmente il contenuto */
+    align-items: start; /* Centra orizzontalmente il contenuto */
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers title and description vertically */
+    flex-grow: 1; /* Allows the group to take up available space */
+}
+
+.secondary-info-group {
+    margin-top: auto; /* Pushes the group to the bottom */
+}

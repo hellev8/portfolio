@@ -12,9 +12,6 @@ const Header = ({collapsed}) => {
                 <NavLink to="/albums" activeClassName="active">
                     Albums
                 </NavLink>
-                <NavLink to="/shop" activeClassName="active">
-                    Shop
-                </NavLink>
                 <NavLink to="/about" activeClassName="active">
                     About
                 </NavLink>

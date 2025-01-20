@@ -1,11 +1,12 @@
 .home {
-    height: 100vh;
+    height: 95vh;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e0e0e0;
 }
 
 .home-content {
@@ -49,3 +50,4 @@
         opacity: 1;
     }
 }
+

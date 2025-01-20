@@ -22,30 +22,36 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
 
     return (
         <div className="photo-view">
-            <div className="sidebar">
-                <p className="photo-info">
-                    <strong>Title:</strong> {photos[currentIndex].title}
-                </p>
-                <p className="photo-info">
-                    <strong>Description:</strong> {photos[currentIndex].description}
-                </p>
+            {/* Titolo */}
+            <div className="info-group">
+                <p className="photo-info title">{photos[currentIndex].title}</p>
             </div>
+
+            {/* Contenitore immagine */}
             <div className="photo-container">
+                {/* Pulsante Chiudi */}
                 <button className="close-btn" onClick={onClose}>
                     ×
                 </button>
+
+                {/* Freccia sinistra */}
+                <button className="nav-btn prev-btn" onClick={handlePrev}>
+                    ◀
+                </button>
+
+                {/* Immagine */}
                 <img
                     src={photos[currentIndex].src}
                     alt={photos[currentIndex].title}
                     className="photo"
                 />
-                <button className="nav-btn prev-btn" onClick={handlePrev}>
-                    ◀
-                </button>
+
+                {/* Freccia destra */}
                 <button className="nav-btn next-btn" onClick={handleNext}>
                     ▶
                 </button>
             </div>
+
         </div>
     );
 };

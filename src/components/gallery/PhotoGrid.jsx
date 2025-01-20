@@ -2,8 +2,10 @@ import React from "react";
 import "../../styles/PhotoGrid.css";
 
 const PhotoGrid = ({ photos, onPhotoClick, onClose }) => {
+    //let random = Math.floor(Math.random() * 10) + 1;
     return (
-        <div className="photo-grid">
+        <div className="photo-grid"
+        >
             <button className="close-album-btn" onClick={onClose}>
                 ×
             </button>

@@ -16,5 +16,71 @@
     "src": "/assets/images/photo3.jpg",
     "title": "Serene Beach",
     "description": "Crystal-clear waters lapping against a pristine shore."
+  },
+  {
+    "id": 4,
+    "src": "/assets/images/photo4.jpg",
+    "title": "We we",
+    "description": "Crystal-we waters we against a we we."
+  },
+  {
+    "id": 5,
+    "src": "/assets/images/photo5.jpg",
+    "title": "We we",
+    "description": "Crystal-we waters we against a we we."
+  },
+  {
+    "id": 6,
+    "src": "/assets/images/photo6.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 7,
+    "src": "/assets/images/photo6.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 8,
+    "src": "/assets/images/photo6.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 9,
+    "src": "/assets/images/photo6.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 10,
+    "src": "/assets/images/photo10.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 11,
+    "src": "/assets/images/photo11.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 12,
+    "src": "/assets/images/photo12.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 13,
+    "src": "/assets/images/photo14.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
+  },
+  {
+    "id": 14,
+    "src": "/assets/images/photo14.jpg",
+    "title": "Oi",
+    "description": "Crystal-oi waters we oi a we we."
   }
 ]

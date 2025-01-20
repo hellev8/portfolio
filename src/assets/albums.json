@@ -1,29 +1,109 @@
 [
   {
     "id": 1,
-    "title": "Nature",
-    "cover": "/assets/images/photo1.jpg",
+    "title": "Morocco",
+    "cover": "/assets/images/photo4.jpg",
     "photos": [
       {
+        "id": 1,
         "src": "/assets/images/photo1.jpg",
-        "title": "Mountain",
-        "description": "A majestic mountain in the morning light."
+        "title": "Sunset Over the Mountains",
+        "description": "A breathtaking view of the sun setting behind the hills."
       },
       {
+        "id": 2,
         "src": "/assets/images/photo2.jpg",
-        "title": "Forest",
-        "description": "A peaceful forest trail."
+        "title": "City Lights",
+        "description": "A vibrant nightscape of a bustling city."
+      },
+      {
+        "id": 4,
+        "src": "/assets/images/photo4.jpg",
+        "title": "We we",
+        "description": "Crystal-we waters we against a we we."
+      },
+      {
+        "id": 5,
+        "src": "/assets/images/photo5.jpg",
+        "title": "We we",
+        "description": "Crystal-we waters we against a we we."
+      },
+      {
+        "id": 6,
+        "src": "/assets/images/photo6.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 7,
+        "src": "/assets/images/photo7.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 8,
+        "src": "/assets/images/photo8.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 9,
+        "src": "/assets/images/photo9.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 10,
+        "src": "/assets/images/photo10.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 11,
+        "src": "/assets/images/photo11.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 12,
+        "src": "/assets/images/photo12.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 13,
+        "src": "/assets/images/photo14.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
+      },
+      {
+        "id": 14,
+        "src": "/assets/images/photo14.jpg",
+        "title": "Oi",
+        "description": "Crystal-oi waters we oi a we we."
       }
     ]
   },
   {
-    "id": 2,
-    "title": "Cityscapes",
+    "id": 4,
+    "title": "Nudes",
     "cover": "/assets/images/photo3.jpg",
     "photos": [
       {
         "src": "/assets/images/photo3.jpg",
-        "title": "Skyline",
+        "title": "Nudes",
+        "description": "A vibrant city skyline at night."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Portraits",
+    "cover": "/assets/images/photo3.jpg",
+    "photos": [
+      {
+        "src": "/assets/images/photo3.jpg",
+        "title": "Portraits",
         "description": "A vibrant city skyline at night."
       }
     ]

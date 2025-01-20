@@ -1,11 +1,14 @@
 .header {
-    background-color: #f0f0f0; /* Lighter gray color */
+    background-color: #e0e0e0; /* Lighter gray color */
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #cccccc; /* Lighter border */
     transition: transform 0.3s ease-in-out; /* Add transition for smooth collapsing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    position: relative; /* Ensure the header is positioned above other elements */
+    z-index: 10;
 }
 
 .header.collapsed {
@@ -18,7 +21,7 @@
 
 .nav {
     display: flex;
-    gap: 15px; /* Reduced spacing between links */
+    gap: 60px; /* Reduced spacing between links */
 }
 
 .nav a {

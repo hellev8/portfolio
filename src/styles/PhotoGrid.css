@@ -1,44 +1,63 @@
 .photo-grid {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height */
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0; /* Background color similar to PhotoView */
-    position: relative; /* To position the close button */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #e0e0e0; /* Softer background color for contrast */
+    position: relative;
+    overflow-y: auto; /* Enables vertical scrolling */
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adds space between grid items */
+    padding: 30px;
+    max-width: 1200px; /* Limits the width for better layout */
+}
+
+.grid-item {
+    overflow: hidden; /* Ensures images don't overflow their container */
+    border-radius: 12px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
+    height: auto; /* Maintains aspect ratio */
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-.grid-item img:hover {
-    transform: scale(1.05);
+.grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .close-album-btn {
     position: absolute;
-    top: 10px; /* Positioning the close button at the top right */
-    right: 10px;
+    top: 20px;
+    right: 60px;
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 50%;
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Ensure the button is circular */
+    transition: transform 0.6s ease,background 0.3s ease;
 }
 
 .close-album-btn:hover {
-    background: #ffffff;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
 }

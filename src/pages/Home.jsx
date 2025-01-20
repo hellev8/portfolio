@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 import images from "../assets/photos.json";
-const Home = () => {
 
+const Home = () => {
     const [currentImage, setCurrentImage] = useState(images[0]);
+    const [randomWord, setRandomWord] = useState("");
+    const words = ["halo", "how are you?", "what's happening?", "todo bien?", "Stronzo.", "cornuda", "asshole","vaffanculo"];
 
     useEffect(() => {
-        const randomImage = images[Math.floor(Math.random() * images.length)];
-        setCurrentImage(randomImage);
+        const getRandomIndex = (array) => {
+            return Math.floor(Math.random() * array.length);
+        };
+
+        const randomImageIndex = getRandomIndex(images);
+        setCurrentImage(images[randomImageIndex]);
+
+        const randomWordIndex = getRandomIndex(words);
+        setRandomWord(words[randomWordIndex]);
     }, []);
 
     return (
@@ -16,8 +25,7 @@ const Home = () => {
             style={{ backgroundImage: `url(${currentImage.src})` }}
         >
             <div className="home-content">
-                <h1 className="name">Reali.</h1>
-                <p className="photo-details">{currentImage.title} - {currentImage.description}</p>
+                <h1 className="name">{randomWord}</h1>
             </div>
         </div>
     );
