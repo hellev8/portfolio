@@ -61,3 +61,26 @@ button {
 button:hover {
   background-color: #138496;
 }
+
+/* Media Queries per rendere il layout responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,11 +1,12 @@
 /* Stili generali per desktop */
 .albums {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* Usa min-height invece di height */
     text-align: center;
     gap: 20px;
     padding: 20px;
-    justify-content: center;
+    display: flex; /* Aggiungi display flex */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
     align-items: start; /* Allinea gli album dall'alto */
     background-color: #e0e0e0;
     position: relative;
@@ -16,10 +17,8 @@
     grid-template-columns: repeat(4, 1fr); /* Griglia iniziale desktop */
     gap: 40px;
     max-width: calc(4 * 300px + 3 * 20px); /* Larghezza massima per 4 album */
-    margin: 80px ;
+    margin: 0 auto; /* Centra la griglia */
 }
-
-
 .album-card {
     position: relative;
     width: 300px;
@@ -68,23 +67,15 @@
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    .albums {
-        grid-template-columns: repeat(3, 1fr); /* 3 colonne per schermi più piccoli */
-    }
-
     .album-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 colonne per schermi più piccoli */
         max-width: calc(3 * 300px + 2 * 20px);
     }
 }
 
 @media (max-width: 768px) {
-    .albums {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonne per tablet */
-    }
-
     .album-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne per tablet */
         max-width: calc(2 * 300px + 1 * 20px);
     }
 
@@ -94,12 +85,8 @@
 }
 
 @media (max-width: 480px) {
-    .albums {
-        grid-template-columns: 1fr; /* 1 colonna per smartphone */
-    }
-
     .album-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 colonna per smartphone */
         max-width: 100%; /* Occupare tutto lo schermo */
     }
 

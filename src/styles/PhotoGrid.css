@@ -1,33 +1,34 @@
 .photo-grid {
     width: 100vw;
-    min-height: 100vh; /* Use min-height instead of height */
+    min-height: 100vh; /* Usa min-height invece di height */
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    background-color: #e0e0e0; /* Softer background color for contrast */
+    align-items: flex-start; /* Allinea gli elementi dall'alto */
+    background-color: #e0e0e0; /* Colore di sfondo più morbido per contrasto */
     position: relative;
-    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-y: auto; /* Abilita lo scrolling verticale */
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px; /* Adds space between grid items */
+    gap: 20px; /* Aggiunge spazio tra gli elementi della griglia */
     padding: 30px;
-    max-width: 1200px; /* Limits the width for better layout */
+    max-width: 1200px; /* Limita la larghezza per un layout migliore */
+    margin: 0 auto; /* Centra la griglia */
 }
 
 .grid-item {
-    overflow: hidden; /* Ensures images don't overflow their container */
-    border-radius: 12px; /* More pronounced rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Assicura che le immagini non escano dal contenitore */
+    border-radius: 12px; /* Angoli arrotondati più pronunciati */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra sottile per profondità */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .grid-item img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
+    height: auto; /* Mantiene il rapporto d'aspetto */
     cursor: pointer;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
@@ -35,7 +36,7 @@
 
 .grid-item:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra migliorata al passaggio del mouse */
 }
 
 .close-album-btn {
@@ -47,13 +48,13 @@
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    width: 40px; /* Set a fixed width */
-    height: 40px; /* Set a fixed height */
+    width: 40px; /* Larghezza fissa */
+    height: 40px; /* Altezza fissa */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Ensure the button is circular */
-    transition: transform 0.6s ease,background 0.3s ease;
+    border-radius: 50%; /* Assicura che il pulsante sia circolare */
+    transition: transform 0.6s ease, background 0.3s ease;
 }
 
 .close-album-btn:hover {
@@ -61,3 +62,41 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.2);
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .grid-container {
+        max-width: 1000px; /* Limita la larghezza per schermi più piccoli */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        max-width: 700px; /* Limita la larghezza per tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        max-width: 100%; /* Occupa tutto lo schermo per smartphone */
+        padding: 10px; /* Riduce il padding per schermi piccoli */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .close-album-btn {
+        top: 0px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Hide the close button on mobile devices */
+/*
+@media (max-width: 480px) {
+    .close-album-btn {
+        display: none;
+    }
+}
+*/
