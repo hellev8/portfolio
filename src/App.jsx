@@ -1,25 +1,23 @@
-import React from "react";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Albums from "./pages/Albums";
 import Contact from "./pages/Contact";
-import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 
 const App = () => {
+    const [language, setLanguage] = useState("en");
+
     return (
-        <>
-            <Header/>
-            <main>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-            </main>
-            <Footer/>
-        </>
+        <Router>
+            <Header onLanguageChange={setLanguage} />
+            <Routes>
+                <Route path="/" element={<Home language={language} />} />
+                <Route path="/albums" element={<Albums />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
     );
 };
-
 
 export default App;
