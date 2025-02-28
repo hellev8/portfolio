@@ -32,39 +32,41 @@ const Contact = () => {
         <div className="contact">
             <div className="contact-container">
                 <h1>Contact Me</h1>
-                <p>Feel free to reach out for inquiries, collaborations, or just to say hi!</p>
+                {/*<p>Feel free to reach out for inquiries, collaborations, or just to say hi!</p>*/}
+                <p>Just kidding, work in progress!</p>
+                <p>This is a draft, see you soon :)</p>
                 <form className="contact-form" onSubmit={handleSubmit}>
-                    <label htmlFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
+                    {/*<label htmlFor="name">Name</label>*/}
+                    {/*<input*/}
+                    {/*    type="text"*/}
+                    {/*    id="name"*/}
+                    {/*    name="name"*/}
+                    {/*    value={formData.name}*/}
+                    {/*    onChange={handleChange}*/}
+                    {/*    required*/}
+                    {/*/>*/}
 
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
+                    {/*<label htmlFor="email">Email</label>*/}
+                    {/*<input*/}
+                    {/*    type="email"*/}
+                    {/*    id="email"*/}
+                    {/*    name="email"*/}
+                    {/*    value={formData.email}*/}
+                    {/*    onChange={handleChange}*/}
+                    {/*    required*/}
+                    {/*/>*/}
 
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
+                    {/*<label htmlFor="message">Message</label>*/}
+                    {/*<textarea*/}
+                    {/*    id="message"*/}
+                    {/*    name="message"*/}
+                    {/*    rows="5"*/}
+                    {/*    value={formData.message}*/}
+                    {/*    onChange={handleChange}*/}
+                    {/*    required*/}
+                    {/*></textarea>*/}
 
-                    <button type="submit" className="submit-btn">Send</button>
+                    {/*<button type="submit" className="submit-btn">Send</button>*/}
                 </form>
                 {status && <p className="form-status">{status}</p>}
             </div>

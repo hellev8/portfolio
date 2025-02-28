@@ -64,7 +64,8 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
     return (
         <div className="photo-view">
             <div className="info-group">
-                <p className="photo-info title">{photos[currentIndex].title}</p>
+                {/*<p className="photo-info title">{photos[currentIndex].title}</p>*/}
+                <p>:)</p>
             </div>
             <div className="photo-container">
                 <button className="close-btn" onClick={onClose}>

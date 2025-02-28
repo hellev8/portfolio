@@ -24,9 +24,9 @@
       },
       {
         "id": 4,
-        "src": "/assets/amsterdam/IMG_3880.jpg",
-        "title": "amsterdam Photo 4",
-        "description": "Description for amsterdam Photo 4"
+        "src": "/assets/amsterdam/IMG_4235.jpg",
+        "title": "amsterdam Photo 21",
+        "description": "Description for amsterdam Photo 21"
       },
       {
         "id": 5,
@@ -125,12 +125,6 @@
         "description": "Description for amsterdam Photo 20"
       },
       {
-        "id": 21,
-        "src": "/assets/amsterdam/IMG_4235.jpg",
-        "title": "amsterdam Photo 21",
-        "description": "Description for amsterdam Photo 21"
-      },
-      {
         "id": 22,
         "src": "/assets/amsterdam/IMG_4249.jpg",
         "title": "amsterdam Photo 22",
@@ -161,12 +155,7 @@
         "title": "croatia Photo 1",
         "description": "Description for croatia Photo 1"
       },
-      {
-        "id": 2,
-        "src": "/assets/croatia/IMG_7601.jpg",
-        "title": "croatia Photo 2",
-        "description": "Description for croatia Photo 2"
-      },
+
       {
         "id": 3,
         "src": "/assets/croatia/IMG_7614.jpg",
@@ -294,12 +283,7 @@
         "title": "garda Photo 7",
         "description": "Description for garda Photo 7"
       },
-      {
-        "id": 8,
-        "src": "/assets/garda/IMG_6866.jpg",
-        "title": "garda Photo 8",
-        "description": "Description for garda Photo 8"
-      },
+
       {
         "id": 9,
         "src": "/assets/garda/IMG_6877.jpg",
@@ -341,12 +325,6 @@
         "src": "/assets/garda/IMG_6964.jpg",
         "title": "garda Photo 15",
         "description": "Description for garda Photo 15"
-      },
-      {
-        "id": 16,
-        "src": "/assets/garda/IMG_6966.jpg",
-        "title": "garda Photo 16",
-        "description": "Description for garda Photo 16"
       },
       {
         "id": 17,
