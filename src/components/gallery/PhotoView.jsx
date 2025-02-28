@@ -55,7 +55,7 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
             {/* Titolo */}
             <div className="info-group">
                 <p className="photo-info title">{photos[currentIndex].title}</p>
-                <p className="photo-description">{photos[currentIndex].description}</p>
+                {/*<p className="photo-description">{photos[currentIndex].description}</p>*/}
             </div>
 
             {/* Contenitore immagine */}

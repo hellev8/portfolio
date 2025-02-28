@@ -25,7 +25,7 @@
     background-color: #f0f0f0;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
 }
 
 .thumbnail {
@@ -69,13 +69,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: calc(100vw - 80px);
-    max-height: 100vh;
+    max-width: 100%;
+    max-height: 80vh;
 }
 
 .photo {
-    max-width: 100%;
-    max-height: 80%; /* Riduci l'altezza massima per evitare sovrapposizioni */
+    max-width: 90%;
+    max-height: 90%; /* Riduci l'altezza massima per evitare sovrapposizioni */
     object-fit: contain;
     transition: transform 0.3s ease;
     margin-top: 40px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
@@ -83,8 +83,8 @@
 
 .close-btn {
     position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
-    top: 20px; /* Adjust the top position as needed */
-    right: -20px; /* Adjust the right position as needed */
+    top: 27px; /* Adjust the top position as needed */
+    right: 5px; /* Adjust the right position as needed */
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     font-size: 1.5rem;
@@ -274,6 +274,14 @@
         transition: none; /* Rimuove la transizione */
         background: none; /* Rimuove il contorno bianco */
         box-shadow: none; /* Rimuove l'ombra */
+        /*top: 25px;*/
+        /*right: -10px;*/
+        /*width: 20px;*/
+        /*height: 20px;*/
+        /*font-size: 1.2rem;*/
+    }
+
+    .close-btn {
         /*top: 25px;*/
         /*right: -10px;*/
         /*width: 20px;*/
