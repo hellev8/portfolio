@@ -282,7 +282,7 @@
     .carousel {
         justify-content: flex-start; /* Allinea le immagini all'inizio */
         padding: 10px; /* Aggiungi padding per migliorare la visualizzazione */
-        bottom: 40px;
+        bottom: 20px;
     }
 
     .thumbnail {
