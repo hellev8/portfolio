@@ -1,86 +1,62 @@
 [
   {
     "id": 1,
-    "src": "/assets/images/photo1.jpg",
-    "title": "Sunset Over the Mountains",
-    "description": "A breathtaking view of the sun setting behind the hills."
+    "src": "/assets/images/IMG_0066.jpg",
+    "title": "Photo 1",
+    "description": "Description for Photo 1"
   },
   {
     "id": 2,
-    "src": "/assets/images/photo2.jpg",
-    "title": "City Lights",
-    "description": "A vibrant nightscape of a bustling city."
+    "src": "/assets/images/IMG_0213.jpg",
+    "title": "Photo 2",
+    "description": "Description for Photo 2"
   },
   {
     "id": 3,
-    "src": "/assets/images/photo3.jpg",
-    "title": "Serene Beach",
-    "description": "Crystal-clear waters lapping against a pristine shore."
+    "src": "/assets/images/IMG_0394.jpg",
+    "title": "Photo 3",
+    "description": "Description for Photo 3"
   },
   {
     "id": 4,
-    "src": "/assets/images/photo4.jpg",
-    "title": "We we",
-    "description": "Crystal-we waters we against a we we."
+    "src": "/assets/images/IMG_0844.jpg",
+    "title": "Photo 4",
+    "description": "Description for Photo 4"
   },
   {
     "id": 5,
-    "src": "/assets/images/photo5.jpg",
-    "title": "We we",
-    "description": "Crystal-we waters we against a we we."
+    "src": "/assets/images/IMG_0850.jpg",
+    "title": "Photo 5",
+    "description": "Description for Photo 5"
   },
   {
     "id": 6,
-    "src": "/assets/images/photo6.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
+    "src": "/assets/images/IMG_0872.jpg",
+    "title": "Photo 6",
+    "description": "Description for Photo 6"
   },
   {
     "id": 7,
-    "src": "/assets/images/photo6.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
+    "src": "/assets/images/IMG_0963.jpg",
+    "title": "Photo 7",
+    "description": "Description for Photo 7"
   },
   {
     "id": 8,
-    "src": "/assets/images/photo6.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
+    "src": "/assets/images/IMG_3863.jpg",
+    "title": "Photo 8",
+    "description": "Description for Photo 8"
   },
   {
     "id": 9,
-    "src": "/assets/images/photo6.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
+    "src": "/assets/images/IMG_3864.jpg",
+    "title": "Photo 9",
+    "description": "Description for Photo 9"
   },
   {
     "id": 10,
-    "src": "/assets/images/photo10.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
-  },
-  {
-    "id": 11,
-    "src": "/assets/images/photo11.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
-  },
-  {
-    "id": 12,
-    "src": "/assets/images/photo12.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
-  },
-  {
-    "id": 13,
-    "src": "/assets/images/photo14.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
-  },
-  {
-    "id": 14,
-    "src": "/assets/images/photo14.jpg",
-    "title": "Oi",
-    "description": "Crystal-oi waters we oi a we we."
+    "src": "/assets/images/IMG_3957.jpg",
+    "title": "Photo 10",
+    "description": "Description for Photo 10"
   }
 ]

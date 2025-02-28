@@ -20,12 +20,17 @@
 }
 
 .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden; /* Assicura che le immagini non escano dal contenitore */
     border-radius: 12px; /* Angoli arrotondati più pronunciati */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra sottile per profondità */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
+.horizontal-image {
+    object-fit: cover; /* Assicura che l'immagine riempia la card senza distorsioni */
+}
 .grid-item img {
     width: 100%;
     height: auto; /* Mantiene il rapporto d'aspetto */
@@ -40,9 +45,9 @@
 }
 
 .close-album-btn {
-    position: absolute;
-    top: 20px;
-    right: 60px;
+    position: fixed;
+    top: 65px;
+    right: calc(1% + 5px);
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     font-size: 1.5rem;
@@ -55,6 +60,7 @@
     align-items: center;
     border-radius: 50%; /* Assicura che il pulsante sia circolare */
     transition: transform 0.6s ease, background 0.3s ease;
+    z-index: 1001;
 }
 
 .close-album-btn:hover {
@@ -84,11 +90,11 @@
     }
 
     .close-album-btn {
-        top: 0px;
-        right: 0px;
-        width: 30px;
-        height: 30px;
-        font-size: 1.2rem;
+        top: 60px; /* Regola la posizione in alto per schermi piccoli */
+        right: 5px; /* Regola la posizione a destra per schermi piccoli */
+        width: 20px; /* Riduci la larghezza per schermi piccoli */
+        height: 20px; /* Riduci l'altezza per schermi piccoli */
+        font-size: 1.2rem; /* Riduci la dimensione del font per schermi piccoli */
     }
 }
 
