@@ -54,10 +54,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: white; /* Sfondo bianco */
-    color: #000; /* Testo nero */
+    height: 100%; /* Usa % invece di vh */
+    width: 100%; /* Usa % invece di vw */
+    background-color: white;
+    color: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,34 +71,34 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: calc(100vw - 80px);
-    max-height: 90vh;
+    max-width: calc(100% - 80px); /* Usa % invece di vw */
+    max-height: 90%; /* Usa % invece di vh */
 }
 
 .photo {
     max-width: 90%;
-    max-height: 90%; /* Riduci l'altezza massima per evitare sovrapposizioni */
+    max-height: 90%; /* Usa % invece di vh */
     object-fit: contain;
     transition: transform 0.3s ease;
-    margin-top: 40px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
+    margin-top: 40px; /* Usa px invece di rem */
 }
 
 .close-btn {
-    position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
-    top: 27px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
+    position: absolute;
+    top: 27px; /* Usa px invece di rem */
+    right: 10px; /* Usa px invece di rem */
     background: transparent;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 24px; /* Usa px invece di rem */
     border: none;
     cursor: pointer;
-    width: 40px; /* Set a fixed width */
-    height: 40px; /* Set a fixed height */
+    width: 40px; /* Usa px invece di rem */
+    height: 40px; /* Usa px invece di rem */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Ensure the button is circular */
-    z-index: 1001; /* Ensure the button is above other content */
+    border-radius: 50%;
+    z-index: 1001;
     transition: transform 0.6s ease, background 0.3s ease;
 }
 
@@ -182,47 +182,53 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) and (orientation: landscape) {
-    .photo-view {
-        flex-direction: row; /* Disporre gli elementi in una riga */
-        align-items: flex-start; /* Allineare gli elementi all'inizio */
+@media (max-width: 768px) {
+    .close-btn {
+        position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
+        top: 20px; /* Adjust the top position as needed */
+        right: 3px; /* Adjust the right position as needed */
     }
-
     .photo-container {
+        bottom: 15px;
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 80%;
     }
 
     .photo {
         margin-top: 0px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
     }
 
-    .photo-index-overlay {
-        bottom: 4px;
-        right: 3px;
-        font-size: 10px;
-        padding: 1px 4px;
-    }
-
-    .photo-info {
-        font-size: 16px;
-    }
-
     .info-group {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        padding: 5px 10px;
+        padding: 0px 10px;
         color: black;
     }
-
-    .photo-description {
-        display: none;
+    .photo-index-overlay {
+        bottom: 4px;
+        right: 6px;
+        font-size: 8px;
+        padding: 1px 3px;
     }
 
-    .secondary-info-group {
+    .carousel {
+        justify-content: flex-start; /* Allinea le immagini all'inizio */
+        padding: 10px; /* Aggiungi padding per migliorare la visualizzazione */
+        bottom: 110px;
+    }
+
+    .thumbnail {
+        margin: 0 10px; /* Aumenta il margine per migliorare la spaziatura */
+    }
+
+    .photo-info {
         font-size: 14px;
     }
+    .secondary-info-group {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -242,17 +248,16 @@
         z-index: 1001; /* Assicurati che il carosello sia sopra altri contenuti */
     }
 }
-
 @media (max-width: 480px) {
     .close-btn {
         position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
-        top: 29px; /* Adjust the top position as needed */
-        right: 5px; /* Adjust the right position as needed */
+        top: 24px; /* Adjust the top position as needed */
+        right: 3px; /* Adjust the right position as needed */
     }
     .photo-container {
-        bottom: 20px;
+        bottom: 25px;
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 85%;
     }
 
     .photo {
@@ -263,7 +268,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        padding: 5px 10px;
+        padding: 0px 10px;
         color: black;
     }
 
@@ -277,7 +282,7 @@
     .carousel {
         justify-content: flex-start; /* Allinea le immagini all'inizio */
         padding: 10px; /* Aggiungi padding per migliorare la visualizzazione */
-        bottom: 110px;
+        bottom: 100px;
     }
 
     .thumbnail {
