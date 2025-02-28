@@ -2,9 +2,11 @@
 .thumbnail-container {
     position: relative;
 }
+
 .no-scroll {
     overflow: hidden;
 }
+
 .photo-index-overlay {
     position: absolute;
     bottom: 3px;
@@ -25,7 +27,7 @@
     background-color: #f0f0f0;
     width: 100%;
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
 }
 
 .thumbnail {
@@ -69,8 +71,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 100%;
-    max-height: 80vh;
+    max-width: calc(100vw - 80px);
+    max-height: 90vh;
+    /*}*/
+    /*    max-width: 100%;*/
+    /*    max-height: 80vh;*/
 }
 
 .photo {
@@ -85,7 +90,7 @@
     position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
     top: 27px; /* Adjust the top position as needed */
     right: 5px; /* Adjust the right position as needed */
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     color: #000;
     font-size: 1.5rem;
     border: none;
@@ -101,8 +106,6 @@
 }
 
 .close-btn:hover {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.2);
 }
 
@@ -110,7 +113,7 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.0);
+    background: transparent;
     border: none;
     color: black;
     cursor: pointer;
@@ -172,6 +175,7 @@
     color: #333; /* Colore del testo più sofisticato */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra al testo */
 }
+
 .photo-description {
     text-align: left;
     font-family: 'Roboto', sans-serif; /* Font moderno e leggibile */
@@ -182,24 +186,28 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) and (orientation: landscape){
+@media (max-width: 768px) and (orientation: landscape) {
     .photo-view {
         flex-direction: row; /* Disporre gli elementi in una riga */
         align-items: flex-start; /* Allineare gli elementi all'inizio */
     }
+
     .photo-container {
         flex: 2; /* Dare più spazio al contenitore dell'immagine */
         max-height: 100%; /* Assicurarsi che l'immagine non superi l'altezza disponibile */
     }
+
     .photo {
         margin-top: 0px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
     }
+
     .photo-index-overlay {
         bottom: 4px;
         right: 3px;
         font-size: 10px;
         padding: 1px 4px;
     }
+
     .photo-info {
         font-size: 16px;
     }
@@ -211,9 +219,11 @@
         padding: 10px; /* Aggiungere padding per migliorare la leggibilità */
         text-align: left; /* Allineare il testo a sinistra */
     }
+
     .photo-description {
         display: none;
     }
+
     .secondary-info-group {
         font-size: 14px;
     }
@@ -223,6 +233,7 @@
     .photo-description {
         display: none;
     }
+
     .carousel {
         position: fixed; /* Cambia da absolute a fixed */
         bottom: 0;
@@ -237,21 +248,31 @@
 }
 
 @media (max-width: 480px) {
+
+    .photo-container {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
     .photo {
         margin-top: 0px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
     }
+
     .info-group {
         top: 20px;
-        }
+    }
+
     .photo-index-overlay {
         bottom: 4px;
         right: 6px;
         font-size: 8px;
         padding: 1px 3px;
     }
+
     .carousel {
         justify-content: flex-start; /* Allinea le immagini all'inizio */
         padding: 10px; /* Aggiungi padding per migliorare la visualizzazione */
+        bottom: 100px;
     }
 
     .thumbnail {
@@ -274,20 +295,8 @@
         transition: none; /* Rimuove la transizione */
         background: none; /* Rimuove il contorno bianco */
         box-shadow: none; /* Rimuove l'ombra */
-        /*top: 25px;*/
-        /*right: -10px;*/
-        /*width: 20px;*/
-        /*height: 20px;*/
-        /*font-size: 1.2rem;*/
     }
 
-    .close-btn {
-        /*top: 25px;*/
-        /*right: -10px;*/
-        /*width: 20px;*/
-        /*height: 20px;*/
-        /*font-size: 1.2rem;*/
-    }
 
     .nav-btn {
         padding: 5px 10px;

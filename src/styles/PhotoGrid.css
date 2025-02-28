@@ -45,27 +45,23 @@
 }
 
 .close-album-btn {
-    position: fixed;
-    top: 65px;
-    right: calc(1% + 5px);
-    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 20px;
+    background: transparent;
     color: #000;
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    width: 40px; /* Larghezza fissa */
-    height: 40px; /* Altezza fissa */
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Assicura che il pulsante sia circolare */
-    transition: transform 0.6s ease, background 0.3s ease;
     z-index: 1001;
+    transition: transform 0.6s ease, background 0.3s ease;
 }
 
 .close-album-btn:hover {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.2);
 }
 
@@ -74,20 +70,6 @@
     .grid-container {
         max-width: 1000px; /* Limita la larghezza per schermi più piccoli */
     }
-    /*.close-album-btn {*/
-    /*    top: 65px; !* Regola la posizione in alto per schermi piccoli *!*/
-    /*    right: 5px; !* Regola la posizione a destra per schermi piccoli *!*/
-    /*    width: 20px; !* Riduci la larghezza per schermi piccoli *!*/
-    /*    height: 20px; !* Riduci l'altezza per schermi piccoli *!*/
-    /*    font-size: 1.2rem; !* Riduci la dimensione del font per schermi piccoli *!*/
-    /*    background-color: #e0e0e0; !* Colore di sfondo più morbido per contrasto *!*/
-    /*}*/
-    /*.close-album-btn:hover{*/
-    /*    transition: none; !* Rimuove la transizione *!*/
-    /*    background: none; !* Rimuove il contorno bianco *!*/
-    /*    box-shadow: none; !* Rimuove l'ombra *!*/
-    /*    transform: none;*/
-    /*}*/
 }
 
 @media (max-width: 768px) {
@@ -95,18 +77,11 @@
         max-width: 700px; /* Limita la larghezza per tablet */
     }
     .close-album-btn {
-        top: 65px; /* Regola la posizione in alto per schermi piccoli */
-        right: 5px; /* Regola la posizione a destra per schermi piccoli */
+        top: -5px; /* Regola la posizione in alto per schermi piccoli */
+        right: -5px; /* Regola la posizione a destra per schermi piccoli */
         width: 20px; /* Riduci la larghezza per schermi piccoli */
         height: 20px; /* Riduci l'altezza per schermi piccoli */
         font-size: 1.2rem; /* Riduci la dimensione del font per schermi piccoli */
-        background-color: #e0e0e0; /* Colore di sfondo più morbido per contrasto */
-    }
-    .close-album-btn:hover{
-        transition: none; /* Rimuove la transizione */
-        background: none; /* Rimuove il contorno bianco */
-        box-shadow: none; /* Rimuove l'ombra */
-        transform: none;
     }
 }
 
@@ -118,19 +93,12 @@
     }
 
     .close-album-btn {
-        top: 65px; /* Regola la posizione in alto per schermi piccoli */
-        right: 5px; /* Regola la posizione a destra per schermi piccoli */
+        top: -5px; /* Regola la posizione in alto per schermi piccoli */
+        right: -5px; /* Regola la posizione a destra per schermi piccoli */
         width: 20px; /* Riduci la larghezza per schermi piccoli */
         height: 20px; /* Riduci l'altezza per schermi piccoli */
         font-size: 1.2rem; /* Riduci la dimensione del font per schermi piccoli */
-        background-color: #e0e0e0; /* Colore di sfondo più morbido per contrasto */
     }
 
-    .close-album-btn:hover{
-        transition: none; /* Rimuove la transizione */
-        background: none; /* Rimuove il contorno bianco */
-        box-shadow: none; /* Rimuove l'ombra */
-        transform: none;
-    }
 }
 
