@@ -251,8 +251,8 @@
 @media (max-width: 480px) {
     .close-btn {
         position: absolute; /* Use fixed to keep it in the top-right corner of the viewport */
-        top: 24px; /* Adjust the top position as needed */
-        right: 3px; /* Adjust the right position as needed */
+        top: 23px; /* Adjust the top position as needed */
+        right: 0px; /* Adjust the right position as needed */
     }
     .photo-container {
         bottom: 20px;
@@ -261,7 +261,7 @@
     }
 
     .photo {
-        margin-top: 0px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
+        margin-top: 5px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
     }
 
     .info-group {
@@ -282,7 +282,7 @@
     .carousel {
         justify-content: flex-start; /* Allinea le immagini all'inizio */
         padding: 10px; /* Aggiungi padding per migliorare la visualizzazione */
-        bottom: 20px;
+        bottom: 15px;
     }
 
     .thumbnail {
