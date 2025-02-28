@@ -1,9 +1,10 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import "../../styles/PhotoView.css";
 
 const PhotoView = ({ photoIndex, photos, onClose }) => {
     const [currentIndex, setCurrentIndex] = useState(photoIndex);
+    const [isScrolling, setIsScrolling] = useState(false);
     const thumbnailRefs = useRef([]);
 
     useEffect(() => {
@@ -21,10 +22,8 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
     }, [currentIndex]);
 
     useEffect(() => {
-        // Aggiungi la classe no-scroll al body quando il componente è montato
         document.body.classList.add("no-scroll");
         return () => {
-            // Rimuovi la classe no-scroll dal body quando il componente è smontato
             document.body.classList.remove("no-scroll");
         };
     }, []);
@@ -38,52 +37,52 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
     };
 
     const handleThumbnailClick = (index) => {
-        setCurrentIndex(index);
+        if (!isScrolling) {
+            setCurrentIndex(index);
+        }
     };
 
     const handlers = useSwipeable({
-        onSwipedLeft: handleNext,
-        onSwipedRight: handlePrev,
+        onSwipedLeft: () => {
+            setIsScrolling(true);
+            handleNext();
+            setTimeout(() => setIsScrolling(false), 300);
+        },
+        onSwipedRight: () => {
+            setIsScrolling(true);
+            handlePrev();
+            setTimeout(() => setIsScrolling(false), 300);
+        },
         preventDefaultTouchmoveEvent: true,
         trackMouse: true
     });
+
     if (currentIndex === null || !photos[currentIndex]) {
-        return <div>No photo available</div>; // Fallback UI
+        return <div>No photo available</div>;
     }
+
     return (
-        <div className="photo-view" {...handlers}>
-            {/* Titolo */}
+        <div className="photo-view">
             <div className="info-group">
                 <p className="photo-info title">{photos[currentIndex].title}</p>
-                {/*<p className="photo-description">{photos[currentIndex].description}</p>*/}
             </div>
-
-            {/* Contenitore immagine */}
             <div className="photo-container">
-                {/* Pulsante Chiudi */}
                 <button className="close-btn" onClick={onClose}>
                     ×
                 </button>
-
-                {/* Freccia sinistra */}
                 <button className="nav-btn prev-btn" onClick={handlePrev}>
                     ◀
                 </button>
-
-                {/* Immagine */}
                 <img
                     src={photos[currentIndex].src}
                     alt={photos[currentIndex].title}
                     className="photo"
+                    {...handlers}
                 />
-
-                {/* Freccia destra */}
                 <button className="nav-btn next-btn" onClick={handleNext}>
                     ▶
                 </button>
             </div>
-
-            {/* Carosello */}
             <div className="carousel">
                 {photos.map((photo, index) => (
                     <div key={photo.id} className="thumbnail-container">
@@ -102,7 +101,6 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 };

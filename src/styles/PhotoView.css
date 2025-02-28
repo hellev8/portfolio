@@ -261,7 +261,7 @@
     }
 
     .photo {
-        margin-top: 5px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
+        margin-top: 10px; /* Aggiungi un margine superiore per separare l'immagine dal titolo e dal tasto chiudi */
     }
 
     .info-group {
