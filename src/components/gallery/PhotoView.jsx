@@ -20,6 +20,15 @@ const PhotoView = ({ photoIndex, photos, onClose }) => {
         }
     }, [currentIndex]);
 
+    useEffect(() => {
+        // Aggiungi la classe no-scroll al body quando il componente è montato
+        document.body.classList.add("no-scroll");
+        return () => {
+            // Rimuovi la classe no-scroll dal body quando il componente è smontato
+            document.body.classList.remove("no-scroll");
+        };
+    }, []);
+
     const handleNext = () => {
         setCurrentIndex((prev) => (prev + 1) % photos.length);
     };

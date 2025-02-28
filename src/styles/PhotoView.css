@@ -1,7 +1,9 @@
 .thumbnail-container {
     position: relative;
 }
-
+.no-scroll {
+    overflow: hidden;
+}
 .photo-index-overlay {
     position: absolute;
     bottom: 3px;
